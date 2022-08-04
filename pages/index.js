@@ -51,6 +51,7 @@ const App = () => {
         <header className="header-container">
           <p className="header"> Solana Pay Store</p>
           <p className="sub-text">buy and sell using solana and the power of web3</p>
+          <p className="subxx">click the 'Buy Now' button and wait for your wallet to pop up to complete the transaction</p>
 
           {isOwner && (
             <button className="create-product-button" onClick={() => setCreating(!creating)}>

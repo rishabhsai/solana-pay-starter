@@ -32,6 +32,10 @@
   font-size: 25px;
 }
 
+.subxx {
+  font-size: 18px;
+}
+
 .gradient-text {
   background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
   background-clip: text;
