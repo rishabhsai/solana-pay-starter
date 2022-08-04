@@ -22,6 +22,25 @@
   padding: 30px;
 }
 
+.allign-left {
+  text-align: left;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 100;
+}
+
+.hidden-on-mobile {
+  display: none;
+}
+
+.padding-mobile {
+  padding-top: 5rem;
+} 
+
 .header {
   margin: 0;
   font-size: 50px;
@@ -203,5 +222,19 @@ button:disabled {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hidden-on-mobile {
+      clear: both;
+      display: block;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+  }
+
+  .padding-mobile{
+    padding-top: 1rem;
   }
 }

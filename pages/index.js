@@ -24,7 +24,7 @@ const App = () => {
       </div>    
     </div>
   );
-  
+   
   useEffect(() => {
     if (publicKey) {
       fetch(`/api/fetchProducts`)
@@ -47,9 +47,17 @@ const App = () => {
   return (
     <div className="App">
       <HeadComponent/>
+      <div className="top-left hidden-on-mobile">
+        <div className="button-container">
+          <WalletMultiButton className="cta-button connect-wallet-button" />
+        </div>
+      </div>
+      
+
+
       <div className="container">
-        <header className="header-container">
-          <p className="header"> Solana Pay Store</p>
+        <header className="header-container padding-mobile">
+          <p className="header"> Solana Pay Store</p>  
           <p className="sub-text">buy and sell using solana and the power of web3</p>
           <p className="subxx">click the 'Buy Now' button and wait for your wallet to pop up to complete the transaction</p>
 
